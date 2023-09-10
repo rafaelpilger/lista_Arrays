@@ -6,9 +6,19 @@
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
+    const palavra = prompt("Informe apenas uma unica palavra");
+    const letra = prompt("Informe a letra que você deseja encontrar nessa palavra");
 
 
     //PROCESSAMENTO
+    const pesquisa = palavra.search(letra)
+
+    if (pesquisa >= 0) {
+        alert(`A letra "${letra}" está na posição ${pesquisa + 1}`);
+    }
+    else {
+        alert(`Letra não encontrada, volte ao inicio do programa e tente novamente`);
+    }
 
 
     //SAÍDA

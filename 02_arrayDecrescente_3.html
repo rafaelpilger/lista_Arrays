@@ -4,11 +4,33 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
+    const NUM1 = Number (prompt("Digite um número, inteiro").trim())
+    const NUM2 = Number (prompt("Digite um segundo número, inteiro").trim())
+    const NUM3 = Number (prompt("Digite um terceiro número, inteiro").trim())
 
     //PROCESSAMENTO
-
+    let array = []
+     
+    if(NUM3 > NUM2 && NUM2 > NUM1){
+        alert(` ${[array= NUM3, NUM2, NUM1]}`);
+    }
+    else if(NUM2 > NUM1 && NUM1 > NUM3){
+      alert (`${array= [NUM2, NUM1, NUM3]}`);
+    }
+    else if(NUM1 > NUM2 && NUM2 > NUM3){
+     alert (`${array = [NUM1, NUM2, NUM3]}`);
+    }
+    else if (NUM3 > NUM1 && NUM1 > NUM2){
+        alert (`${array = [NUM3, NUM1, NUM2]}`);
+    }
+    else if (NUM2 > NUM3 && NUM3 > NUM1){
+        alert (`${array = [NUM2, NUM3, NUM1]}`);
+    }
+    else if (NUM1 > NUM3 && NUM3 > NUM2){
+        alert (`${array = [NUM1, NUM3, NUM2]}`);
+    }
 
     //SAÍDA
+
 
 </script>

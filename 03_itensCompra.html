@@ -8,9 +8,20 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
-
+    const F1 = prompt("Insira o nome da primeira fruta para a lista de compras").trim();
+    const F2 = prompt("Insira o nome da segunda fruta para a lista de compras").trim();
+    const F3 = prompt("Insira o nome da terceira fruta para a lista de compras").trim();
+    const B1 = prompt("Insira o nome da primeira bebida para a lista de compras").trim();
+    const B2 = prompt("Insira o nome da segunda bebida para a lista de compras").trim();
+    const B3 = prompt("Insira o nome da terceira bebida para a lista de compras").trim();
 
     //PROCESSAMENTO
+    let arrayFrutas = [F1, F2, F3];
+    let arrayBebidas = [B1, B2, B3];
+
+    alert(`As frutas que serão compradas: ${arrayFrutas.join(" , ")}`);
+    alert(`As bebidas que serão compradas: ${arrayBebidas.join(" , ")}`);
+    alert(`A lista de compras: ${arrayFrutas.concat(arrayBebidas).join(" , ")}`);
 
 
     //SAÍDA
